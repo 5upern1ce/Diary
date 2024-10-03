@@ -25,6 +25,7 @@ Partial Class pg1
         Me.menulbl = New System.Windows.Forms.Label()
         Me.mkaselectionlbl = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Exitbtn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'menulbl
@@ -60,12 +61,24 @@ Partial Class pg1
         Me.Button1.Text = "Diary Events"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Exitbtn
+        '
+        Me.Exitbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Exitbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Exitbtn.Location = New System.Drawing.Point(299, 314)
+        Me.Exitbtn.Name = "Exitbtn"
+        Me.Exitbtn.Size = New System.Drawing.Size(198, 79)
+        Me.Exitbtn.TabIndex = 3
+        Me.Exitbtn.Text = "Exit"
+        Me.Exitbtn.UseVisualStyleBackColor = False
+        '
         'pg1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Exitbtn)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.mkaselectionlbl)
         Me.Controls.Add(Me.menulbl)
@@ -79,4 +92,5 @@ Partial Class pg1
     Friend WithEvents menulbl As Label
     Friend WithEvents mkaselectionlbl As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Exitbtn As Button
 End Class
